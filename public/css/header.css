@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+  color: inherit;
+  display: block;
+
+}
+.header{
+  height: 60px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+  color: #2680Df;
+}
+
+.headerContainer{  
+  max-width: 1000px;
+  height: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.headerLogo{  
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+}
+.headerBtns{
+  height: 100%;  
+  display: flex;
+  align-items: center;  
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.headerBtn{
+  padding: 10px 40px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.headerSignupBtn{
+  color: white;
+  background-color: #2680Df;
+}
+
+.headerPostBtn{
+  border: 2px solid #2680Df;  
+}
+.headerIcon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: darkgray;
+  overflow: hidden;
+}
+.headerIcon img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* レスポンシブ（タブレット） */
+@media screen and (max-width: 600px){
+  .headerLogo{
+    left: 10px;
+    transform: translate(0%, -50%);
+  }
+}

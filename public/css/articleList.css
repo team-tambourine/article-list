@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a {
+    color: inherit;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+}
+/* ページ上部 */
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+.pageTitle {
+    margin-bottom: 20px;
+}
+.border {
+    border-top: 0.1px solid gray;
+    width: 100%;
+    height: 1px;
+}
+
+/* 記事リストのアイテム */
+.listItemFlexBox {
+    display: flex;
+    margin: 20px 0;
+}
+.listItemFlexBox:hover {
+    cursor: pointer;
+}
+.listItemImage {
+    display: block;
+    min-width: 40px;
+    height: 40px;
+    background-color: #999999;
+    border-radius: 50%;
+}
+.informationContainer {
+    margin-left: 10px;
+}
+.listItemTitle {
+    margin: 0;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    /* word-wrap: normal; */
+}
+.userName {
+    margin: 5px 0 0 0;
+    font-size: 5px;
+}
+.listItemBorder {
+    border-top: 3px solid rgb(220, 220, 220);
+    width: 100%;
+    height: 1px;
+}
+/* ページ切り替えボタン */
+.pageSwitchContainer {
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    height: 30px;
+    margin: 20px 0 40px 0;
+    display: flex;
+}
+.pageSwitchButton {
+    font-size: 3px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-color: #fff;
+    border: 0.1px solid #999999;
+    border-radius: 50%;
+}
+.pageSwitchButton > p {
+    /* text-align: center; */
+    margin: auto;
+}
+.pageSwitchButton:hover {
+    cursor: pointer;
+}
+.pageNumber {
+    margin: auto 10px;
+}
+.buttonLeft {
+    margin-left: auto;
+}
+.buttonRight {
+    margin-right: auto;
+}
+
+/* スマホ用メディアクエリ */
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 10px;
+        width: 95%;
+        padding-bottom: 70px;
+    }
+    .pageTitle {
+        margin-bottom: 10px;
+    }
+    .userName {
+        font-size: 12px;
+    }
+    .pageSwitchContainer {
+        width: 95%;
+        margin: 20px 0;
+    }
+    .pageSwitchButton > p {
+        font-size: 12px;
+    }
+}

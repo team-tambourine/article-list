@@ -1,0 +1,91 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a {
+    color: inherit;
+}html {
+    width: 100%;
+}
+body {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    padding: 0 20px 30px 20px;
+}
+.loginContent {
+    /* width: 520px; */
+}
+
+.loginTitle {
+    padding: 60px 0 40px 0;
+    /* width: 520px; */
+    font-family: "Hiragino Sans";
+    font-weight: bolder;
+    src: local(HiraginoSans-W5);
+    font-size: 30px;
+    color: #2680bf;
+    margin: 0 auto;
+}
+.loginSubTitle {
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: "Hiragino Sans";
+    src: local(HiraginoSans-W5);
+    font-size: 14px;
+}
+.formContainer {
+    /* width: 520px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formWrapper {
+}
+.loginLabel {
+    font-weight: bold;
+    font-family: "Hiragino Sans";
+    src: local(HiraginoSans-W5);
+    font-size: 14px;
+    /* padding-bottom: 10px; */
+}
+.form-control {
+    height: 30px;
+}
+
+.passwordDescription {
+    src: local(HiraginoSans-W5);
+}
+
+.description {
+    margin-top: 10px;
+    font-family: "Hiragino Sans";
+    font-size: 14px;
+    color: #999999;
+}
+.confirmPassword {
+    padding-bottom: 60px;
+}
+
+.loginLink {
+    color: #2680bf;
+    /* 武井が追加しました */
+    display: inline-block;
+}
+.loginLink:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.submitButton {
+    background-color: #2680bf;
+}
+.submitButton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
